@@ -1,0 +1,8 @@
+
+$contact-bg:$white;
+
+
+.contact-section{
+    @include styleSectino(150px,150px,$contact-bg); 
+}
+

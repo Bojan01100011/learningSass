@@ -1,0 +1,19 @@
+
+
+
+//MIXIN
+
+@mixin radius($radius){
+
+    border-radius: $radius;
+}
+
+
+@mixin custumRadius($rtl,$rtr,$rbr,$rbl){
+    border-radius: $rtl $rtr $rbr $rbl;
+}
+
+@mixin styleSectino($pt,$pb,$bg){
+    padding: $pt 0 $pb;
+    background-color: $bg;
+}

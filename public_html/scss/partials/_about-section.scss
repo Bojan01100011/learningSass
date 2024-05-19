@@ -3,4 +3,6 @@ $about-bg: $white;
 .about-section{
     padding: 30px 0;
     background: $about-bg;
+
+    @include styleSectino(30px,30px,$about-bg)
 }

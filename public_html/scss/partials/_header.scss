@@ -2,8 +2,8 @@ $header-bg:$purple;
 $header-link-color: $white;
 $nav-link-hover: $grean;
 header{
-    padding:20px 0;
-    background-color: $header-bg;
+    
+    @include styleSectino(20px,20px,$header-bg);
 
     .branding{
         text-align: center;

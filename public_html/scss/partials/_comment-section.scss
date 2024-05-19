@@ -1,5 +1,16 @@
+$comment-bg: $white;
 
 .comment-section{
-    padding: 30px 0;
-    background: #ffffff;
+    @include styleSectino(30px,30px,$comment-bg)
 }
+
+
+.comment-img{
+
+    img{
+        @include custumRadius(50%, 20%, 2% ,13%);
+    }
+
+}
+
+
