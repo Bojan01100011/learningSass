@@ -29,3 +29,21 @@
     background-color: $bg;
 }
 
+@function colorYiq($color){
+
+    $r: red($color);
+    $g: grean($color);
+    $b: blue($color);
+
+    $yiq: $r*0.299 + $g*0.27 + $b*0.114;
+
+    @if( $yig > 129){
+        @return $black;
+    }
+    @else{
+        @return $white;
+    }
+
+
+}
+
