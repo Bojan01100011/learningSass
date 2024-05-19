@@ -5,15 +5,27 @@
 
 @mixin radius($radius){
 
-    border-radius: $radius;
+    @if($enable-radius){
+        border-radius: $radius;
+    }
+    @else{
+        border-radius: 0px;
+    }
+
 }
 
 
 @mixin custumRadius($rtl,$rtr,$rbr,$rbl){
+   @if(){
     border-radius: $rtl $rtr $rbr $rbl;
+   }
+   @else{
+
+   }
 }
 
 @mixin styleSectino($pt,$pb,$bg){
     padding: $pt 0 $pb;
     background-color: $bg;
 }
+
