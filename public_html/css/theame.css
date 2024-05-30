@@ -164,4 +164,51 @@ footer .copyright {
     padding: 5px 20px;
   }
 }
+.btn-info, .btn-warning, .btn-success, .btn-danger, .btn-defaault {
+  display: inline-block;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px 0 5px 0;
+  cursor: pointer;
+}
+
+.btn-defaault {
+  background-color: #444444;
+  color: #FFFFFF;
+}
+.btn-defaault:hover {
+  background-color: #2b2b2b;
+}
+
+.btn-danger {
+  background-color: #f00008;
+  color: #FFFFFF;
+}
+.btn-danger:hover {
+  background-color: #bd0006;
+}
+
+.btn-success {
+  background-color: #18b304;
+  color: #FFFFFF;
+}
+.btn-success:hover {
+  background-color: #118103;
+}
+
+.btn-warning {
+  background-color: #f77a05;
+  color: #000000;
+}
+.btn-warning:hover {
+  background-color: #c56104;
+}
+
+.btn-info {
+  background-color: #09e0b1;
+  color: #000000;
+}
+.btn-info:hover {
+  background-color: #07af8a;
+}
 /*# sourceMappingURL=theame.css.map */

@@ -1,0 +1,33 @@
+
+$btn-colection: ( 
+
+    'defaault' : $dark-gray,
+    'danger'   : $red,
+    'success'  : $grean,
+    'warning'  : $orange,
+    'info'     : $cyan
+);
+
+%btn{
+    display: inline-block;
+    padding: 10px 5px;
+    border: none;
+
+    @include custumRadius(5px , 0, 5px, 0);
+
+    cursor: pointer;
+}
+
+@each $key, $value in $btn-colection{
+
+    .btn-#{$key}{
+
+        @extend %btn;
+        background-color: $value;
+        color: colorYiq($value);
+
+        &:hover{
+            background-color: darken($value, 10%);
+        }
+    }
+}
