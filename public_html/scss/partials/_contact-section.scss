@@ -4,5 +4,34 @@ $contact-bg:$white;
 
 .contact-section{
     @include styleSectino(150px,150px,$contact-bg); 
+    background-image: url(../img/contact.png);
+    background-size: cover;
+
+    display: flex;
+        justify-content: center;
+        text-align: center;
+
+
+
+    .contact-form{
+
+        
+
+        .form-group{
+            
+
+            label{
+                display: block;
+            }
+    
+            .form-countrol{
+                display: block;
+                width: 100%;
+                
+            }
+
+        }
+
+    }
 }
 

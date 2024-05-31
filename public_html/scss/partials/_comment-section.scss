@@ -1,16 +1,30 @@
 $comment-bg: $white;
 
 .comment-section{
-    @include styleSectino(30px,30px,$comment-bg)
-}
+    @include styleSectino(30px,30px,$comment-bg);
+
+    .comment-list{
+        list-style-type: none;
+        padding: 0;
 
 
-.comment-img{
-
-    img{
-        @include custumRadius(50%, 20%, 2% ,13%);
+        .comment-item{
+            display: flex;
+        }
     }
 
+
+    .comment-img{
+
+        img{
+            @include custumRadius(50%, 20%, 2% ,13%);
+            padding-top: 60%;
+        }
+    
+    }
+
+    
 }
+
 
 

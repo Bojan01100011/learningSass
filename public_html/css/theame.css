@@ -111,9 +111,18 @@ header a{
   padding: 30px 0 30px;
   background-color: #ffffff;
 }
-
-.comment-img img {
+.comment-section .comment-list {
+  list-style-type: none;
+  padding: 0;
+}
+.comment-section .comment-list .comment-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.comment-section .comment-img img {
   border-radius: 50% 20% 2% 13%;
+  padding-top: 60%;
 }
 
 .course-section {
@@ -124,6 +133,22 @@ header a{
 .contact-section {
   padding: 150px 0 150px;
   background-color: #ffffff;
+  background-image: url(../img/contact.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.contact-section .contact-form .form-group label {
+  display: block;
+}
+.contact-section .contact-form .form-group .form-countrol {
+  display: block;
+  width: 100%;
 }
 
 footer {
